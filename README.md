@@ -14,13 +14,13 @@ This is a simple web application that allows users to add, delete and edit notes
    - This function is responsible for creating a new note element with appropriate structure for editing and viewing.
    - It includes buttons for editing and deleting, a main content area for displaying rendered Markdown content, and a textarea for editing the note's content.
    - Event listeners are attached to the edit and delete buttons to toggle visibility and handle the note's removal.
-6.**Toggle Edit Mode**:
+6. **Toggle Edit Mode**:
    - The edit button's event listener toggles between displaying the main content and the editing textarea when clicked. This allows users to easily switch between 
      viewing and editing modes.
-7.**Live Preview**:
+7. **Live Preview**:
    - The `textArea` event listener captures input events (typing) in the textarea.
    - As the user types, the content is rendered using the "marked" library and displayed in the main content area. This provides a live preview of how the note will appear as Markdown is being typed
-8.**Updating Local Storage**:
+8. **Updating Local Storage**:
    - Whenever content is edited or notes are deleted, the `updateLS` function is called.
    - This function collects the content from all textareas and stores it in local storage as JSON data.
    - This ensures that the notes' content persists even after the user closes the browser or refreshes the page.
