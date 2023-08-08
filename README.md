@@ -10,6 +10,8 @@ This is a simple web application that allows users to add, delete and edit notes
    - It begins by fetching any existing notes from local storage and rendering them on the page when the page loads.
 4. **Event Listeners**:
    - An event listener is added to the "Add note" button. When clicked, this button triggers the `addNewNote` function.
+  
+     
 5. **addNewNote Function**:
    - This function is responsible for creating a new note element with appropriate structure for editing and viewing.
    - It includes buttons for editing and deleting, a main content area for displaying rendered Markdown content, and a textarea for editing the note's content.
