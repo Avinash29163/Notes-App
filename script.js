@@ -27,15 +27,15 @@ function addNewNote(text = '') {
 
     // setup inner html of note 
     note.innerHTML = `
-    <div class="tools">       // div tags can be maipulated by css
-        <button class="edit"><i class="fas fa-edit"></i></button>    // using font awesome edit button css 
-        <button class="delete"><i class="fas fa-trash-alt"></i></button>   // using font awesome delete button css
+    <div class="tools">       <!-- div tags can be maipulated by css-->
+        <button class="edit"><i class="fas fa-edit"></i></button>    <!--using font awesome edit button css -->
+        <button class="delete"><i class="fas fa-trash-alt"></i></button>   <!-- using font awesome delete button css-->
     </div>
-     // applying css based on condition
-     // main: main content of notes will be displayed here
-     // textarea: where editing will happen 
-    <div class="main ${text ? "" : "hidden"}"></div>  // if text is present show main area
-    <textarea class="${text ? "hidden" : ""}"></textarea>  // if text is absent show text area
+     <!-- applying css based on condition
+      main: main content of notes will be displayed here
+     textarea: where editing will happen -->
+    <div class="main ${text ? "" : "hidden"}"></div>  <!--if text is present show main area-->
+    <textarea class="${text ? "hidden" : ""}"></textarea>  <!--if text is absent show text area-->
     `
     // for queryselector:dom
     //. -> u r talking about a class
