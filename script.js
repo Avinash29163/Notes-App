@@ -88,6 +88,6 @@ function updateLS() {
 
     notesText.forEach(note => notes.push(note.value))   // iterates through all text area elements and push them to notes array
 
-    localStorage.setItem('notes', JSON.stringify(notes))   // use of local storage api 
+    localStorage.setItem('notes', JSON.stringify(notes))   // use of local storage api intead of sessionstorage <!-- -->
                                                            // stores value in notes after performing json stringify 
 }
